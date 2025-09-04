@@ -1,0 +1,49 @@
+.ratingGroupContainer {
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: calc(32rem / 16);
+}
+
+.ratingGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.ratingGroup input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ratingGroup label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(40rem / 16);
+  height: calc(40rem / 16);
+  background-color: #262e38;
+  border-radius: 50px;
+  color: #969fad;
+  font-family: "Overpass", sans-serif;
+  font-size: calc(15rem / 16);
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.ratingGroup label:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.ratingGroup input:checked + label {
+  background-color: #fc7614;
+}
+
+@media (min-width: 48rem) {
+  .ratingGroupContainer {
+    min-width: 100%;
+  }
+}
