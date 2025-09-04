@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marcus-hill.github.io/Interactive-Rating-Component/",
+  "homepage": "https://marcus-hill.github.io/Interactive-Rating-Component/rating-component/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"

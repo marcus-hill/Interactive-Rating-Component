@@ -3,7 +3,7 @@ import classes from "./RatingSelector.module.css";
 const RatingSelector = ({ currentRating, updateCurrentRating }) => {
   return (
     <>
-      <div className={classes.ratingGroupContainer}>
+      <fieldset className={classes.ratingGroupContainer}>
         <legend className="visually-hidden">Rate our service</legend>
         <div className={classes.ratingGroup}>
           <input type="radio" id="1" name="rating" value="1" onChange={updateCurrentRating} checked={currentRating?.toString() === "1" ? "checked" : ""} />
@@ -31,7 +31,7 @@ const RatingSelector = ({ currentRating, updateCurrentRating }) => {
             5
           </label>
         </div>
-      </div>
+      </fieldset>
     </>
   );
 };

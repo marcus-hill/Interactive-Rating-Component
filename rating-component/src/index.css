@@ -84,3 +84,9 @@ select {
   white-space: nowrap;
   width: 1px;
 }
+
+fieldset {
+  padding: 0; /* remove default padding */
+  margin: 0; /* optional: remove margin */
+  border: none; /* optional: remove border if you don't want it */
+}
