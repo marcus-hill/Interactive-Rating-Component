@@ -1,11 +1,13 @@
 .ratingContainer {
   background-image: linear-gradient(#232a34, #181e27);
-  max-width: calc(327rem / 16);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: calc(28.5rem / 16) calc(24rem / 16);
+  margin: 0 5rem;
   border-radius: 15px;
+  box-sizing: border-box;
+  max-width: calc(350rem / 16);
 }
 
 .starIconContainer {
@@ -34,6 +36,7 @@
 }
 
 .submitButton {
+  max-width: 100%;
   width: 100%;
   outline: none;
   border: none;
@@ -52,7 +55,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 48px) {
+/* @media (width > 48rem) {
   .ratingContainer {
     min-width: calc(412rem / 16);
   }
@@ -60,4 +63,4 @@
   .ratingTitle {
     font-size: calc(28rem / 16);
   }
-}
+} */

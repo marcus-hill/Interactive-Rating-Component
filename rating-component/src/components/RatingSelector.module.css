@@ -7,8 +7,8 @@
 
 .ratingGroup {
   display: flex;
-  justify-content: space-between;
-  gap: 0.7rem;
+  justify-content: space-evenly;
+  gap: 0.3rem;
 }
 
 .ratingGroup input {
